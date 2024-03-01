@@ -1,0 +1,73 @@
+<html>
+  <head>
+   <style>
+     body{
+	   background-image:url(iimage/14.png);
+	   reapite:no-reapite;
+	   height:20vh;
+	   background-size:cover;
+	   background-position:center;
+	   position:relative;
+	   
+	   }
+	   div{
+	    border:4px solid;
+		border-radius:8px;
+		width:300px;
+		text-align:center;
+	    background-color:black;
+		opacity:0.9;
+		position:center;
+		}
+		button
+		{
+		  background-color:green;
+		  border:none;
+		  opacity:0.9;
+		  }
+		  input[type="name],
+		  input[type="password"]{
+		     opacity:;
+			form{
+				align:center}
+			div {
+  box-shadow: 10px 10px grey;
+}
+			
+   </style>
+   <script>
+   
+   function validate()
+   {
+   var username=document.getElementById("username").value;
+     var password=document.getElementById("password").value;
+	 if(username=="admin" && password=="admin")
+	 {
+			//alert("login done!!!");
+			window.location.href="index.html"
+		//	return false;
+	 }
+	 else
+	 {
+	 alert("password incorrect");
+	 }
+   }
+   </script>
+  </head>
+  <body>
+  <center>
+     <h1> Login</h1>
+	 <br/>
+	 <br/>
+	 <br/>
+     <div>
+	    <form action="E:/site/index.html" method="POST">
+		   <p><input type="name" name="user name" value="user name" id="username"></p>
+		   <p><input type="password" name="user pass" value="password" id="password"></p>
+		   <!--p><button value=index><a href=#>index</a></button></p-->
+		   <p><input type="submit" value="login" onclick="validate()"></p>
+		  </center>
+		</form>
+     </div>	 
+  </body>
+</html>
